@@ -1,4 +1,5 @@
 // import icons from '../../img/icons.svg';
+
 // class ResultView {
 //   #parentElement = document.querySelector('.results');
 //   #data;
@@ -11,6 +12,7 @@
 //       this.#genereteHtml(val);
 //     });
 //   }
+
 //   #genereteHtml(obj) {
 //     const html = `
 //     <li class="preview">
