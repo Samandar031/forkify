@@ -5,6 +5,11 @@
 // // qiymatlarni globalni qilib uzimizdan saqlab olamiz
 // export const state = {
 //   recipe: {},
+//   search: {
+//     query: ' ',
+//     data: [],
+//     results: {},
+//   },
 // };
 
 // export const loadRecipe = async function (id) {
@@ -23,7 +28,6 @@
 //       ingredients: obj.ingredients,
 //       image: obj.image_url,
 //     };
-//     console.log(obj);
 //   } catch (err) {
 //     throw err;
 //   }
