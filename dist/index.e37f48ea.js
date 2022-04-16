@@ -526,9 +526,21 @@ var _iconsSvgDefault = parcelHelpers.interopDefault(_iconsSvg);
 const recipeContainer = document.querySelector('.recipe');
 // https://forkify-api.herokuapp.com/v2
 ///////////////////////////////////////
+const spinnerHtml = function(parentEl) {
+    const markup = `
+   <div class="spinner">
+    <svg>
+      <use href="${_iconsSvgDefault.default}.svg#icon-loader"></use>
+    </svg>
+  </div> 
+  `;
+    parentEl.innerHTML = '';
+    parentEl.insertAdjacentHTML('afterbegin', markup);
+};
 const showRecipe = async function() {
     try {
         // 1.loading recipe
+        spinnerHtml(recipeContainer);
         const res = await fetch('https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bce26');
         const data = await res.json();
         let { recipe  } = data.data;
