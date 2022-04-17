@@ -157,3 +157,4 @@
 //   }
 // }
 // export default new RecipeView(); //obj cha yaratib export qildik.Classlarni doim shunaqa qilib export qilishimiz kerak
+// dsfgh
